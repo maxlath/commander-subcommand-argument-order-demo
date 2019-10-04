@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const program = require('commander')
+
+program
+.option('-s, --someflag', 'some boolean flag')
+.parse(process.argv)
+
+console.log('program.args', { args: program.args, someflag: program.someflag })
