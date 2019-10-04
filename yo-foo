@@ -5,4 +5,6 @@ program
 .option('-s, --someflag', 'some boolean flag')
 .parse(process.argv)
 
-console.log('program.args', { args: program.args, someflag: program.someflag })
+console.log('from yo-foo')
+console.log('program.args', program.args)
+console.log('program.someflag', program.someflag)
